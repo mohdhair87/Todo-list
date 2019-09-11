@@ -1,0 +1,140 @@
+.background-container{
+  background-color: RGBA(255,255,255,0.85);
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin-top: -50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #444;
+}
+
+.header-container{
+  background-color: #444;
+  padding: 15px;
+  padding-bottom:0;
+  margin-top:-50px;
+  padding-top: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px #000;
+  
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  .todo-item {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-duration: 0.3s;
+    background-color: #fff;
+    padding: 1px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  
+  .remove-item {
+    cursor: pointer;
+    margin-left: 14px;
+    color: red;
+    margin-left: 14px;
+    width: 25px;
+    text-align: center;
+    border-radius: 100%;
+    transition: all 0.5s ease; 
+    -webkit-transition: all 0.5s ease;
+
+    &:hover {
+      background-color: red;
+      color: #fff;
+    }
+  }
+  
+  .todo-item-left { // later
+    display: flex;
+    align-items: center;
+  }
+
+  .items-left{background-color: red;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-bottom: -27px;}
+  
+  .todo-item-label {
+    padding: 10px;
+    margin-left: 12px;
+  }
+  
+  .todo-item-edit {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-left: 12px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; //override defaults
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  .extra-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 14px;
+    margin-bottom: 30px;
+    color:#fff;
+  }
+  
+  button {
+    font-size: 16px;
+    background-color: transparent;
+    appearance: none;
+    padding: 5px 25px;
+    border: none;
+    color:#aaa;
+    transition: all 0.5s ease; 
+    -webkit-transition: all 0.5s ease;
+  
+    &:hover {
+      color: #fff;
+      border-bottom: 3px solid #09b7f5;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .active {
+    color:#fff;
+    border-bottom: 3px solid #09b7f5
+  }
+  
+  // CSS Transitions
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+  }
+  
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  
